@@ -1,0 +1,51 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  footer {
+    background: #343a40;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  /* Shared Header Section Styles */
+  .page-header,
+  .about-header,
+  .contact-header,
+  .hero {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .page-header {
+    padding: 40px 0; /* Specific override */
+  }
+  
+  .page-header h1,
+  .about-header h1,
+  .contact-header h1,
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Card Styles */
+  .article-card,
+  .blog-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .article-card:hover,
+  .blog-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-weight: bold;
+    margin-top: 40px;
+  }
+  
