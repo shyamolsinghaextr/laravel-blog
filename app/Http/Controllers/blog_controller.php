@@ -7,19 +7,19 @@ use Illuminate\Http\Request;
 class blog_controller extends Controller
 {
     public function home_view (){
-        return view('Home', ['title' => 'Home page']);
+        return view('frontend.Home', ['title' => 'Home page']);
     }
 
     public function articles_view(){
-        return view('articles', ['title' => 'articles page']);
+        return view('frontend.articles', ['title' => 'articles page']);
     }
 
     public function about_view(){
-        return view('about', ['title' => 'about page']);
+        return view('frontend.about', ['title' => 'about page']);
     }
 
     public function contact_view(){
-        return view('contact', ['title' => 'contact page']);
+        return view('frontend.contact', ['title' => 'contact page']);
     }
 }
 
