@@ -1,6 +1,6 @@
-<x-head :title="$title" />
-<x-nav/>
+@extends('layout.masterLayout')
 
+@section('content')
 
   <!-- Hero Section -->
   <section class="hero">
@@ -47,16 +47,4 @@
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container text-center">
-      <p>&copy; 2025 MyBlog. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-
+@endsection
