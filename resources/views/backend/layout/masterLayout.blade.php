@@ -19,7 +19,7 @@
                 <h5 class="p-3">Dashboard</h5>
                 <a href="{{ route('dashboard') }}">Dashboard</a>
                 <a href="{{ route('create_post') }}">Create Post</a>
-                <a href="#">Settings</a>
+                <a href="{{ route('settings') }}">Settings</a>
             </div>
         </nav>
 

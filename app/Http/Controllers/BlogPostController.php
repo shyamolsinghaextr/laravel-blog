@@ -22,4 +22,8 @@ class BlogPostController extends Controller
     public function edit_post(){
         return view('backend.editPost', ['title'=> 'Edit Post']);
     }
+
+    public function view_post(){
+        return view('backend.viewPost', ['title'=> 'view Post']);
+    }
 }
