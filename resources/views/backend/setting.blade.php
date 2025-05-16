@@ -5,11 +5,12 @@
 <div class="container mt-5">
   <h2 class="mb-4">Create New Category</h2>
 
-  <form action="#" method="POST">
+  <form action="{{ route('category_create') }}" method="POST">
+    @csrf
     <!-- Category Name -->
     <div class="mb-3">
       <label for="name" class="form-label">Category Name</label>
-      <input type="text" class="form-control" id="name" name="name" placeholder="Enter category name" required>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Enter category name" >
     </div>
 
     <!-- Slug -->
@@ -25,7 +26,7 @@
     </div>
 
     <!-- Submit -->
-    <button type="submit" class="btn btn-success">Create Category</button>
+    <button type="submit" class="btn btn-success" name='submit'>Create Category</button>
     <a href="categories.html" class="btn btn-secondary">Cancel</a>
   </form>
 </div>

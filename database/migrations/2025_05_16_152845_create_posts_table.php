@@ -11,13 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('categorys', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->unique();
-            $table->string('slug')->unique();
-            $table->text('description')->unique();;
+            $table->string('title');
+            $table->string('post_catagory');
+            $table->text('post_content');
+            $table->string('author');
+            $table->string('img')->nullable();
+            $table->boolean('status')->default(true);
             $table->timestamps();
-        });
+        }
+    );
     }
 
     /**
@@ -25,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('category');
+        Schema::dropIfExists('posts');
     }
 };

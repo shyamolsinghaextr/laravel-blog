@@ -17,9 +17,9 @@ Route::get('create-post', [BlogPostController::class, 'create_post'])->name('cre
 Route::get('delete-post', [BlogPostController::class, 'delete_post'])->name('delete_post');
 Route::get('edit-post', [BlogPostController::class, 'edit_post'])->name('edit_post');
 Route::get('view-post', [BlogPostController::class, 'view_post'])->name('view_post');
-
 Route::get('settings', [SettingController::class, 'settings'])->name('settings');
-
 Route::get('category-list', [SettingController::class, 'category_list'])->name('category_list');
+Route::post('category-create', [SettingController::class, 'category_create'])->name('category_create');
 
+Route::get('test', [SettingController::class, 'db_test'])->name('db_test');
 
